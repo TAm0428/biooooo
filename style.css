@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:#f8fafc;
+    color:#333;
+}
+
+header{
+    text-align:center;
+    padding:70px 20px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #14b8a6,
+    #3b82f6);
+
+    color:white;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.card-container{
+    width:90%;
+    margin:50px auto;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    height:180px;
+
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:
+    translateY(-10px)
+    scale(1.03);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* 레드 */
+
+.red{
+    background:
+    linear-gradient(
+    135deg,
+    #fff1f2,
+    #ffe4e6);
+
+    border:2px solid #fecdd3;
+}
+
+/* 그린 */
+
+.green{
+    background:
+    linear-gradient(
+    135deg,
+    #f0fdf4,
+    #dcfce7);
+
+    border:2px solid #bbf7d0;
+}
+
+/* 화이트 */
+
+.white{
+    background:
+    linear-gradient(
+    135deg,
+    #ffffff,
+    #f1f5f9);
+
+    border:2px solid #e2e8f0;
+}
+
+/* 펼쳐지는 내용 */
+
+.info{
+    display:none;
+
+    width:80%;
+    margin:25px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    animation:fadeIn 0.4s ease;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.red-info{
+    background:#fff5f5;
+}
+
+.green-info{
+    background:#f0fff4;
+}
+
+.white-info{
+    background:#fafafa;
+}
+
+.info h3{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.info ul{
+    margin-left:25px;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
